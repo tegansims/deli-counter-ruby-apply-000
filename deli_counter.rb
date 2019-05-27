@@ -23,13 +23,23 @@ def now_serving(next_person = "There is nobody waiting to be served!")
   return
 end
 
-take_a_number(katz_deli, "Ada")
-take_a_number(katz_deli, "Grace")
-take_a_number(katz_deli, "Kent")
-puts line(katz_deli)
-puts now_serving(katz_deli)
-puts line(katz_deli)
-puts take_a_number(katz_deli, "Matz")
-puts line(katz_deli)
-puts now_serving(katz_deli)
-puts line(katz_deli)
+$counter = 0
+def even_number(n)
+  $counter = $counter + 1 
+  n.push($counter)
+  print n
+end 
+
+even_number(array=[])
+
+
+#take_a_number(katz_deli, "Ada")
+#take_a_number(katz_deli, "Grace")
+#take_a_number(katz_deli, "Kent")
+#puts line(katz_deli)
+#puts now_serving(katz_deli)
+#puts line(katz_deli)
+#puts take_a_number(katz_deli, "Matz")
+#puts line(katz_deli)
+#puts now_serving(katz_deli)
+#puts line(katz_deli)
